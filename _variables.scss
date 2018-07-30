@@ -1,3 +1,4 @@
+$black: #000 !default;
 $social-icons-size: 2rem !default;
 $social-icon-fb: false !default;
 $social-icon-insta: false !default;
@@ -10,3 +11,16 @@ $social-icon: map-merge((
 ), $social-icon);
 $kasza-zindex-fixed: 1030 !default;
 $kasza-fixed: false !default;
+
+//grid
+$kasza-grid: false !default;
+$kasza-grid-column: 12 !default;
+$kasza-grid-breakpoint: () !default;
+$kasza-grid-breakpoint: map-merge((
+    "sx": 0px,
+    "sm": 576px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px
+), $kasza-grid-breakpoint) !default;
+$kasza-grid-padding: 3% !default;
