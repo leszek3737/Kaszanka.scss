@@ -1,12 +1,13 @@
 @mixin kaszaGridMakeContainer{
-    @each $width in $kasza-grid-breakpoint {
-        @media screen and (min-width: $width){
+    @each $name, $key in $kasza-grid-breakpoint {
+        @media screen and (min-width: $key){
             .container {
-                width: calc(#{$width} - #{($kasza-grid-padding*2)});
+                width: calc(#{$key} - #{($kasza-grid-padding*2)});
             }
         }
     }
 }
+
 @mixin kaszaGridContainer{
     .container-full {
         width: (100% - ($kasza-grid-padding*2));
