@@ -1,6 +1,8 @@
 @import "grid/container";
 @import "grid/row";
+@import "grid/col";
 @mixin kaszaGrid {
     @include kaszaGridContainer;
     @include kaszaGridMakeRow;
+    @include kaszaGridMakeCols;
 }

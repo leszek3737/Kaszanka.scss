@@ -10,14 +10,14 @@
 
 @mixin kaszaGridContainer{
     .container-full {
-        width: (100% - ($kasza-grid-padding*2));
+        width: $kasza-grid-width;
         padding-right: $kasza-grid-padding;
         padding-left: $kasza-grid-padding;
         margin-right: auto;
         margin-left: auto;
     }
     .container {
-        width: (100% - ($kasza-grid-padding*2));
+        width: $kasza-grid-width;
         padding-right: $kasza-grid-padding;
         padding-left: $kasza-grid-padding;
         margin-right: auto;
