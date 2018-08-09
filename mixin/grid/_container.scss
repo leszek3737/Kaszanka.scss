@@ -1,3 +1,12 @@
+@mixin kaszaGridMakeContainer{
+    @each $width in $kasza-grid-breakpoint {
+        @media screen and (min-width: $width){
+            .container {
+                width: calc(#{$width} - #{($kasza-grid-padding*2)});
+            }
+        }
+    }
+}
 @mixin kaszaGridContainer{
     .container-full {
         width: (100% - ($kasza-grid-padding*2));
@@ -6,4 +15,12 @@
         margin-right: auto;
         margin-left: auto;
     }
+    .container {
+        width: (100% - ($kasza-grid-padding*2));
+        padding-right: $kasza-grid-padding;
+        padding-left: $kasza-grid-padding;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    @include kaszaGridMakeContainer();
 }
