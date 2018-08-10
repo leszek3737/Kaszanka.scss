@@ -14,7 +14,7 @@ $kasza-fixed: false !default;
 
 //grid
 $kasza-grid: false !default;
-$kasza-grid-column: 6 !default;
+$kasza-grid-column: 12 !default;
 $kasza-grid-breakpoint: (
     sm: 576px,
     md: 768px,
@@ -22,5 +22,5 @@ $kasza-grid-breakpoint: (
     xl: 1200px
 ) !default;
 $kasza-grid-padding: 3% !default;
-$kasza-grid-padding-col: $kasza-grid-padding/100 !default;
+$kasza-grid-padding-col: $kasza-grid-padding/10 !default;
 $kasza-grid-width: 100% -($kasza-grid-padding *2);
