@@ -10,7 +10,7 @@ Celem projektu jest stworzenie biblioteki która zgodnie z zasadą DRY pozwala a
 
 #### Social Icon
 
-Zmienna aktywacyjne - nadanie tej zmiennej wartości true aktywuję klasę (domyślnie false):
+Zmienna aktywacyjna - nadanie tej zmiennej wartości true aktywuję klasę (domyślnie false):
 ```
 $social-icon-xxx: true;
 ```
@@ -33,7 +33,7 @@ $social-icons-size: 2rem;
 
 #### Fixed
 
-Zmienna aktywacyjne - nadanie tej zmiennej wartości true aktywuje klasę (domyślnie false):
+Zmienna aktywacyjna - nadanie tej zmiennej wartości true aktywuje klasę (domyślnie false):
 ```
 $kasza-fixed: true;
 ```
@@ -50,7 +50,7 @@ $kasza-zindex-fixed: 1030;
 
 #### Grid
 
-Zmienna aktywacyjne - nadanie tej zmiennej wartości true aktywuje klasę (domyślnie false):
+Zmienna aktywacyjna - nadanie tej zmiennej wartości true aktywuje klasę (domyślnie false):
 ```
 $kasza-grid: true;
 ```
