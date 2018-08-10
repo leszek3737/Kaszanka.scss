@@ -1,4 +1,4 @@
-@mixin social-icons($type: 0, $size: 2rem) {
+@mixin socialIcons($type: 0, $size: 2rem) {
     @if $type !=0 {
         font-size: $size;
         &:before {
@@ -9,14 +9,14 @@
             text-align: center;
         }
         @extend %fa-brands;
-        @if $type=="fb" {
+        @if $type==fb {
             &:before {
                 color: white;
                 content: "\f082";
                 background: #3b5998;
             }
         }
-        @else if $type=="insta" {
+        @else if $type==insta {
             &:before {
                 padding-right: 0.65rem;
                 content: "\f16d";
@@ -29,7 +29,7 @@
 
             }
         }
-        @else if $type=="yt" {
+        @else if $type==yt {
             &:before {
                 color: $white;
                 content: "\f167";

@@ -3,12 +3,11 @@ $social-icons-size: 2rem !default;
 $social-icon-fb: false !default;
 $social-icon-insta: false !default;
 $social-icon-yt: false !default;
-$social-icon: () !default;
-$social-icon: map-merge((
-    "fb": $social-icon-fb,
-    "insta": $social-icon-insta,
-    "yt": $social-icon-yt
-), $social-icon);
+$social-icon: (
+    fb: $social-icon-fb,
+    insta: $social-icon-insta,
+    yt: $social-icon-yt
+) !default;
 $kasza-zindex-fixed: 1030 !default;
 $kasza-fixed: false !default;
 

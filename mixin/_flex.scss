@@ -1,4 +1,4 @@
-@mixin c-flex-type($type) {
+@mixin kaszFlexType($type) {
     @if $type=="row" {
         flex-direction: row;
     }
@@ -13,7 +13,7 @@
     }
 
 }
-@mixin c-flex-wrap($wrap) {
+@mixin kaszFlexWrap($wrap) {
     @if $wrap=="nowrap" {
         flex-wrap: nowrap;
     }
@@ -24,7 +24,7 @@
         flex-wrap: wrap-reverse
     }
 }
-@mixin c-flex-justify($justify) {
+@mixin kaszFlexJustify($justify) {
     @if $justify=="start" {
         justify-content: flex-start;
     }
@@ -41,7 +41,7 @@
         justify-content: space-around;
     }
 }
-@mixin c-flex-align($align-i) {
+@mixin kaszFlexAlign($align-i) {
     @if $align-i=="start" {
         align-items: flex-start;
     }
@@ -58,18 +58,18 @@
         align-items: stretch;
     }
 }
-@mixin c-flex($type: 0, $wrap: 0, $justify: 0, $align-i: 0) {
+@mixin kaszFlex($type: 0, $wrap: 0, $justify: 0, $align-i: 0) {
     display: flex;
     @if $type !=0 {
-        @include c-flex-type($type)
+        @include kaszFlexType($type)
     }
     @if $wrap !=0 {
-        @include c-flex-wrap($wrap)
+        @include kaszFlexWrap($wrap)
     }
     @if $justify !=0 {
-        @include c-flex-justify($justify)
+        @include kaszFlexJustify($justify)
     }
     @if $align-i !=0 {
-        @include c-flex-align($align-i)
+        @include kaszFlexAlign($align-i)
     }
 }

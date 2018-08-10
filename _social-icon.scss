@@ -1,7 +1,7 @@
 @each $social-icon, $value in $social-icon {
     @if $value == true{
         .btn-#{$social-icon} {
-        @include social-icons($social-icon, $social-icons-size);
+        @include socialIcons($social-icon, $social-icons-size);
     }
   }
 }
