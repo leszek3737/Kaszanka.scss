@@ -1,10 +1,10 @@
 # Kaszanka.scss 
-Celem projektu jest stworzenie biblioteki która zgodnie z zasadą DRY pozwala automatycznie generować nie zbędę klasy na potrzeby projektu. Jednak by nie zwiększać niepotrzebnie pliku CSS będą generowane tylko i wyłącznie klasy potrzebne w danym projekcie.
+Celem projektu jest stworzenie biblioteki która zgodnie z zasadą DRY pozwala automatycznie generować niezbędę klasy na potrzeby projektu. Jednak by nie zwiększać niepotrzebnie pliku CSS będą generowane tylko i wyłącznie klasy potrzebne w danym projekcie.
 
-## Spis funkcji:
+## Spis funkcjonalności:
 1. Aromatyczne generowanie ikonek mediów społecznościowych.
 2. Dodanie do projektu klasa fixed-left/right analogicznych do tych występujących w bootstrapie.
-3.Grid
+3. Grid
 
 ### Komponenty 
 
