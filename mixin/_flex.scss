@@ -11,7 +11,6 @@
     @else if $type=="column-r" {
         flex-direction: column-reverse;
     }
-
 }
 @mixin kaszFlexWrap($wrap) {
     @if $wrap=="nowrap" {

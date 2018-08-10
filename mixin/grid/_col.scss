@@ -1,7 +1,6 @@
 @mixin kaszaGridMakeCol($name) {
     @for $i from 1 to ($kasza-grid-column+1) {
         $width:(($kasza-grid-width/$kasza-grid-column)*$i)-($kasza-grid-padding-col*2);
-
         .col-#{$name}-#{$i}{
             width: $width;
             padding-left: $kasza-grid-padding-col;
@@ -22,6 +21,5 @@
         @media screen and (min-width: $key){
             @include kaszaGridMakeCol($name);
         }
-        
     }
 }
