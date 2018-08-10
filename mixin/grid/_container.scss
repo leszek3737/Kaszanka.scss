@@ -1,0 +1,26 @@
+@mixin kaszaGridMakeContainer{
+    @each $name, $key in $kasza-grid-breakpoint {
+        @media screen and (min-width: $key){
+            .container {
+                width: calc(#{$key} - #{($kasza-grid-padding*2)});
+            }
+        }
+    }
+}
+@mixin kaszaGridContainer{
+    .container-full {
+        width: $kasza-grid-width;
+        padding-right: $kasza-grid-padding;
+        padding-left: $kasza-grid-padding;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .container {
+        width: $kasza-grid-width;
+        padding-right: $kasza-grid-padding;
+        padding-left: $kasza-grid-padding;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    @include kaszaGridMakeContainer();
+}

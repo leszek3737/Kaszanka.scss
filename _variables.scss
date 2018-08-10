@@ -1,0 +1,25 @@
+$black: #000 !default;
+$social-icons-size: 2rem !default;
+$social-icon-fb: false !default;
+$social-icon-insta: false !default;
+$social-icon-yt: false !default;
+$social-icon: (
+    fb: $social-icon-fb,
+    insta: $social-icon-insta,
+    yt: $social-icon-yt
+) !default;
+$kasza-zindex-fixed: 1030 !default;
+$kasza-fixed: false !default;
+
+//grid
+$kasza-grid: false !default;
+$kasza-grid-column: 12 !default;
+$kasza-grid-breakpoint: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+) !default;
+$kasza-grid-padding: 3% !default;
+$kasza-grid-padding-col: $kasza-grid-padding/10 !default;
+$kasza-grid-width: 100% -($kasza-grid-padding *2);

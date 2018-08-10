@@ -1,0 +1,12 @@
+@mixin kaszaGridMakeRow {
+    .row{
+        @include kaszFlex(0, "wrap");
+        padding-left: -$kasza-grid-padding-col;
+        padding-right: -$kasza-grid-padding-col;
+    }
+    .row-reverse{
+        @include kaszFlex("row-r", "wrap");
+        padding-left: -$kasza-grid-padding-col;
+        padding-right: -$kasza-grid-padding-col;
+    }
+}

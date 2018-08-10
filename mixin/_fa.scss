@@ -1,0 +1,19 @@
+%fa-before {
+    &:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+        color: $black;
+    }
+}
+@mixin fa-base($type) {
+    font-family: Font Awesome\ 5 #{$type};
+    @extend %fa-before;
+}
+%fa-brands {
+    @include fa-base("Brands");
+}
